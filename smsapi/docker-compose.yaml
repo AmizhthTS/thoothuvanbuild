@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+   masterapilb:
+    image: masterapi:1.0
+    restart: always
+    ports:
+      - '6003:9092'
+    environment:
+      - TZ=Asia/Kolkata
+networks:
+  default:
+    name: thoothuvan
+    external: true

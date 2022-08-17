@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+   cr1:
+    image: creditapi:1.0
+    restart: always
+    ports:
+      - '6002:8080'
+    environment:
+      - TZ=Asia/Kolkata
+      - redishostname=crq1.redis   
+networks:
+  default:
+    name: thoothuvan
+    external: true
