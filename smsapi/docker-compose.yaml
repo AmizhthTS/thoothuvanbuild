@@ -2,10 +2,10 @@ version: '3.3'
 
 services:
    masterapilb:
-    image: masterapi:1.0
+    image: amizhth/thoothuvan:1.0
     restart: always
     ports:
-      - '6003:9092'
+      - '6003:8080'
     environment:
       - TZ=Asia/Kolkata
 networks:
